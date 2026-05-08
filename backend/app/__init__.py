@@ -56,7 +56,8 @@ def create_app(test_config: dict | None = None) -> Flask:
         app.config.update(test_config)
 
     FRONTEND_URL = os.environ.get("FRONTEND_URL", "*")
-    CORS(app, resources={r"/api/*": {"origins": FRONTEND_URL}})
+    origins = [o.strip().rstrip("/") for o in FRONTEND_URL.split(",")]
+    CORS(app, resources={r"/api/*": {"origins": origins}})
     register_request_middleware(app)
     _register_blueprints(app)
     db.init_app(app)
