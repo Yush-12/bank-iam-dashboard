@@ -2,6 +2,8 @@
 
 This portfolio project demonstrates an automated, intelligent backend and modern frontend designed to enforce Identity and Access Management (IAM) compliance in banking environments. It showcases an architecture that replaces manual, error-prone access reviews (often done in Excel) with a systematic, API-driven detection engine.
 
+### 🌐 [Live Demo →](https://bank-iam-dashboard.vercel.app/)
+
 ## Regulatory Context
 
 The core detection rules in this engine are mapped to real-world financial compliance standards:
