@@ -1,5 +1,3 @@
-"""Phase 1 deterministic seed data for IAM access review demos."""
-
 from __future__ import annotations
 
 import random
